@@ -67,7 +67,7 @@ export const services = [
     icon: FaShieldAlt,
     title: "Insurance Planning",
     shortDescription:
-      "Protect your family's financial future with suitable insurance solutions.",
+      "Protect your family's financial future with comprehensive insurance solutions tailored to your protection needs.",
 
     longDescription:
       "Insurance is a critical component of financial planning. We help identify the right protection strategies for your family through carefully selected life and health insurance solutions, ensuring financial stability during unexpected events.",

@@ -46,7 +46,7 @@ Thank you.`
         ))}
       </div>
 
-      <div className="relative mx-auto max-w-[1380px] px-4 pt-20 pb-16 sm:px-6 sm:pt-24 sm:pb-20 lg:px-8 lg:pt-20 lg:pb-24">
+      <div className="relative mx-auto max-w-[1380px] px-4 pt-20 pb-20 sm:px-6 sm:pt-24 sm:pb-24 lg:px-8 lg:pt-20 lg:pb-32">
 
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
 
@@ -86,7 +86,7 @@ Thank you.`
 
             <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-[#45586c] sm:text-lg sm:leading-8 lg:mx-0 lg:text-xl lg:leading-9">
 
-              Helping individuals and families create, grow and preserve wealth through smart financial planning, investment research and personalized advisory.
+              AMFI Registered Mutual Fund Distributor, Helping individuals and families create, grow and preserve wealth through smart financial planning, investment research and personalized advisory.
 
             </p>
 
@@ -228,36 +228,7 @@ Thank you.`
                   duration={700}
                 >
 
-                  <button
-                    className="
-                      group
-                      flex
-                      w-full
-                      items-center
-                      justify-center
-                      gap-3
-                      rounded-xl
-                      border-2
-                      border-[#6F2DBD]
-                      bg-white
-                      py-4
-                      font-semibold
-                      text-[#6F2DBD]
-                      transition-all
-                      duration-300
-                      hover:bg-[#6F2DBD]
-                      hover:text-white
-                    "
-                  >
-
-                    View More
-
-                    <ArrowRight
-                      size={18}
-                      className="transition-transform duration-300 group-hover:translate-x-1"
-                    />
-
-                  </button>
+                  
 
                 </Link>
 

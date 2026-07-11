@@ -60,52 +60,39 @@ function Stats() {
             overflow-hidden
           "
         >
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 p-4">
 
             {stats.map((item) => (
 
               <div
                 key={item.title}
                 className="
-                  flex
-                  flex-col
-                  items-center
-                  justify-center
-                  px-3
-                  py-6
-                  text-center
-                  border-r
+                  rounded-2xl
+                  border
                   border-purple-100
-                  last:border-r-0
+                  bg-white
+                  p-5
+                  text-center
+                  shadow-sm
                 "
               >
-
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F5EEFF] text-[#6424b8]">
-
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#F5EEFF] text-[#6424b8]">
                   {item.icon}
-
                 </div>
 
-                <h3 className="mt-4 text-2xl font-black text-[#111827] leading-none">
-
+                <h3 className="mt-4 text-3xl font-black text-[#111827]">
                   <AnimatedCounter
                     end={item.number}
                     suffix={item.suffix}
                     duration={2000}
                   />
-
                 </h3>
 
-                <p className="mt-2 text-[11px] leading-4 font-medium text-[#526174]">
-
+                <p className="mt-2 text-sm font-semibold text-[#526174] leading-5">
                   {item.title}
-
                   <br />
-
                   {item.subtitle}
-
                 </p>
-
               </div>
 
             ))}

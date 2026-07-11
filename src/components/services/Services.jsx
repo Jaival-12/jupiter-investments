@@ -81,7 +81,7 @@ function Services() {
 
         {/* Services */}
 
-        <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid items-start gap-8 md:grid-cols-2 lg:grid-cols-3">
 
           {services.map((service, index) => (
 

@@ -8,23 +8,7 @@ import {
 } from "react-icons/fa";
 
 export const heroTrustData = [
-  {
-    id: 1,
-    icon: FaChartLine,
-    title: "15+ Cr",
-    subtitle: "Assets Under Management",
-    description:
-      "Building long-term wealth through disciplined investing and carefully researched financial strategies.",
-  },
-
-  {
-    id: 2,
-    icon: FaUsers,
-    title: "200+",
-    subtitle: "Happy Families",
-    description:
-      "Trusted by hundreds of families who rely on us for personalized financial planning and wealth creation.",
-  },
+  
 
   {
     id: 3,

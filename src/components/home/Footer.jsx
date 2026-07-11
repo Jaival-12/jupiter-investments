@@ -250,13 +250,13 @@ function Footer() {
 
               </button>
 
-              <button className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]">
+              <button className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]">
 
                 <FaInstagram />
 
               </button>
 
-              <button className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]">
+              <button className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]">
 
                 <FaLinkedinIn />
 
@@ -516,6 +516,8 @@ function Footer() {
               text-gray-400
               sm:text-base
               ">
+                Mutual fund investments are subject to market risks. Read all scheme-related documents carefully.
+                <br></br>
               © 2026 Jupiter Investments. All Rights Reserved.
             </p>
 

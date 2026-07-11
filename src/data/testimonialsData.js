@@ -1,8 +1,8 @@
 export const testimonials = [
   {
     id: 1,
-    designation: "Bharat Kelawala",
-    duration: "0:45",
+    designation: "Jatin Tamakuwala",
+    duration: "0:25",
     video: "https://res.cloudinary.com/yumsmvjz/video/upload/v1783621391/client1_erqr0f.mp4",
   },
   {
