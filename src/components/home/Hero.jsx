@@ -84,9 +84,9 @@ Thank you.`
               <span className="h-2 w-2 rounded-full bg-[#d6ad25]" />
             </div>
 
-            <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-[#45586c] sm:text-lg sm:leading-8 lg:mx-0 lg:text-xl lg:leading-9">
+            <p className="mt-6 max-w-xl text-left text-base leading-7 text-[#45586c] sm:text-lg sm:leading-8 lg:mx-0 lg:text-xl lg:leading-9">
 
-              AMFI Registered Mutual Fund Distributor, Helping individuals and families create, grow and preserve wealth through smart financial planning, investment research and personalized advisory.
+              AMFI Registered Mutual Fund Distributor, helping individuals and families create, grow and preserve wealth through smart financial planning, investment research and personalized wealth management.
 
             </p>
 

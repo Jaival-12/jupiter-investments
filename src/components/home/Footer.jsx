@@ -508,36 +508,47 @@ function Footer() {
             />
           </button>
 
-          <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
+            <div
+              className="
+                flex flex-col
+                items-start
+                gap-4
+                text-left
+                md:flex-row
+                md:items-center
+                md:justify-between
+              "
+            >
 
-            <p className="
-              text-sm
-              leading-6
-              text-gray-400
-              sm:text-base
-              ">
-                Mutual fund investments are subject to market risks. Read all scheme-related documents carefully.
-                <br></br>
-              © 2026 Jupiter Investments. All Rights Reserved.
-            </p>
+              {/* Left */}
 
-            <p className="
-              text-sm
-              leading-6
-              text-gray-400
-              sm:text-base
-              ">
-              Designed & Developed by
-              <span className="ml-2 font-semibold text-[#D4AF37]">
-                Jaival Tamakuwala
-              </span>
-            </p>
+              <div className="space-y-2">
+                <p className="text-sm leading-7 text-gray-400">
+                  Mutual fund investments are subject to market risks.
+                  <br className="sm:hidden" />
+                  <span className="hidden sm:inline"> </span>
+                  Read all scheme-related documents carefully.
+                </p>
 
+                <p className="text-sm text-gray-400">
+                  © 2026 Jupiter Investments. All Rights Reserved.
+                </p>
+              </div>
+
+              {/* Right */}
+
+              <p className="text-sm text-gray-400">
+                Designed &amp; Developed by{" "}
+                <span className="font-semibold text-[#D4AF37]">
+                  Jaival Tamakuwala
+                </span>
+              </p>
+
+            </div>
           </div>
 
         </div>
 
-      </div>
 
     </footer>
   );
