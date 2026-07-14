@@ -2,7 +2,14 @@ import { motion } from "framer-motion";
 
 function AboutBackground() {
   return (
-    <>
+    <div
+      className="
+        absolute inset-y-0 left-1/2 w-screen -translate-x-1/2
+        overflow-x-hidden
+        md:inset-0 md:left-0 md:w-auto md:translate-x-0 md:overflow-visible
+        pointer-events-none
+      "
+    >
       {/* Purple Glow */}
 
       <motion.div
@@ -25,6 +32,7 @@ function AboutBackground() {
           bg-[#7C3AED]
           blur-[110px]
           opacity-20
+          pointer-events-none
         "
       />
 
@@ -37,12 +45,36 @@ function AboutBackground() {
           top-1/2
           -translate-x-1/2
           -translate-y-1/2
+
           h-[520px]
           w-[520px]
+
           rounded-full
           border-[24px]
           border-[#E8DBFF]
           opacity-80
+          pointer-events-none
+        "
+      />
+
+      {/* Middle Ring */}
+
+      <div
+        className="
+          absolute
+          left-1/2
+          top-1/2
+          -translate-x-1/2
+          -translate-y-1/2
+
+          h-[460px]
+          w-[460px]
+
+          rounded-full
+          border-[18px]
+          border-[#EDE4FF]
+          opacity-80
+          pointer-events-none
         "
       />
 
@@ -55,16 +87,19 @@ function AboutBackground() {
           top-1/2
           -translate-x-1/2
           -translate-y-1/2
+
           h-[410px]
           w-[410px]
+
           rounded-full
           border-[14px]
           border-[#DCCBFF]
           opacity-60
+          pointer-events-none
         "
       />
 
-      {/* Soft Purple Circle */}
+      {/* Purple Circle */}
 
       <div
         className="
@@ -73,11 +108,14 @@ function AboutBackground() {
           top-1/2
           -translate-x-1/2
           -translate-y-1/2
+
           h-[360px]
           w-[360px]
+
           rounded-full
           bg-[#6F2DBD]
           opacity-95
+          pointer-events-none
         "
       />
 
@@ -104,9 +142,10 @@ function AboutBackground() {
           rounded-full
           border
           border-[#D4AF37]/30
+          pointer-events-none
         "
       />
-    </>
+    </div>
   );
 }
 

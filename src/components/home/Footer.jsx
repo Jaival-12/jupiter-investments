@@ -18,6 +18,8 @@ import logo from "../../assets/images/logo.png";
 import { Link } from "react-scroll";
 import { navigationLinks } from "../../data/navigationData";
 
+import { animateScroll as scroll } from "react-scroll";
+
 
 const services = [
   {
@@ -473,10 +475,9 @@ function Footer() {
         <div className="relative border-t border-white/10 py-8">
 
           <button
-            onClick={() =>
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
+            onClick={() => scroll.scrollToTop({
+                duration: 900,
+                smooth: "easeInOutQuart",
               })
             }
             className="

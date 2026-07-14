@@ -80,24 +80,6 @@ function AboutPreview() {
               ))}
             </div>
 
-            <div className="grid grid-cols-2 gap-10 mt-12">
-              <div>
-                <h3 className="text-5xl font-black text-[#6F2DBD]">
-                  15+
-                </h3>
-
-                <p className="text-gray-600">Crores AUM</p>
-              </div>
-
-              <div>
-                <h3 className="text-5xl font-black text-[#6F2DBD]">
-                  200+
-                </h3>
-
-                <p className="text-gray-600">Happy Families</p>
-              </div>
-            </div>
-
             <Link
               to="why-us"
               smooth={true}
