@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { FaArrowRight } from "react-icons/fa";
 
 function TrustCard({
   icon: Icon,
@@ -115,29 +114,11 @@ function TrustCard({
 
       {/* Description */}
 
-      <p className="mt-3 text-sm leading-6 text-gray-600 sm:mt-4 sm:text-base sm:leading-7">
+      <p className="mt-3 flex-1 text-sm leading-6 text-gray-600 sm:mt-4 sm:text-base sm:leading-7">
         {description}
       </p>
 
-      {/* Arrow */}
-
-      <div
-        className="
-          mt-auto
-          pt-6
-          flex
-          justify-end
-          text-[#6F2DBD]
-        "
-      >
-        <FaArrowRight
-          className="
-            transition-all
-            duration-300
-            group-hover:translate-x-2
-          "
-        />
-      </div>
+      
     </motion.div>
   );
 }

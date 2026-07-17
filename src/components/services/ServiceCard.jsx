@@ -37,14 +37,21 @@ function ServiceCard({
         window.innerWidth >= 1024
           ? !isExpanded
             ? {
-                y: -10,
-                scale: 1.02,
+                y: -12,
+                scale: 1.025,
               }
             : {
+                y: -4,
                 scale: 1.01,
               }
           : {}
       }
+
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
       className={`
         relative
         flex
@@ -63,7 +70,7 @@ function ServiceCard({
         ${
           isExpanded
             ? "z-30 lg:scale-[1.03] border border-[#6F2DBD] shadow-[0_30px_70px_rgba(111,45,189,0.25)] ring-2 ring-[#6F2DBD]/20"
-            : "border border-purple-100 shadow-xl hover:border-[#D4AF37] hover:shadow-2xl"
+            : "border border-purple-100 shadow-xl hover:border-[#6F2DBD]/40 hover:shadow-[0_30px_70px_rgba(111,45,189,0.18)]"
         }
       `}
     >
@@ -74,25 +81,33 @@ function ServiceCard({
           absolute
           -right-16
           -top-16
-          h-48
-          w-48
+          h-56
+          w-56
           rounded-full
-          bg-purple-200
-          blur-3xl
+          bg-[#E9D8FF]
+          blur-[90px]
           transition-all
           duration-500
-          ${isExpanded ? "opacity-40" : "opacity-0"}
+          ${
+            isExpanded
+              ? "opacity-50"
+              : "opacity-0 group-hover:opacity-40"
+          }
         `}
       />
 
       {/* Icon */}
 
       <motion.div
-        animate={{
-          rotate: isExpanded ? 8 : 0,
-          scale: isExpanded ? 1.08 : 1,
+        whileHover={{
+            rotate: 8,
+            scale: 1.12,
         }}
-        transition={{ duration: 0.35 }}
+
+        transition={{
+            type:"spring",
+            stiffness:300
+        }}
         className="
           relative
           flex
@@ -212,7 +227,7 @@ function ServiceCard({
 
               {/* Schedule Consultation */}
 
-                            <motion.div
+              <motion.div
                 initial={{
                   opacity: 0,
                   y: 20,
@@ -262,6 +277,30 @@ function ServiceCard({
           </motion.div>
         )}
       </AnimatePresence>
+
+      <motion.div
+        animate={{
+          x: isExpanded ? 4 : 0,
+        }}
+        className="
+          absolute
+          bottom-7
+          right-7
+          text-[#6F2DBD]
+          opacity-60
+          transition-all
+          duration-300
+          group-hover:opacity-100
+        "
+      >
+        <FaArrowRight
+          className="
+            transition-transform
+            duration-300
+            group-hover:translate-x-1
+          "
+        />
+      </motion.div>
 
       {/* Gold Accent */}
 
