@@ -4,7 +4,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import founder from "../../assets/hero.png";
+import founder from "../../assets/hero.webp";
 
 import { Link } from "react-scroll";
 
