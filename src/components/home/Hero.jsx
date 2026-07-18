@@ -86,7 +86,9 @@ Thank you.`
 
             <p className="mt-6 max-w-xl text-left text-base leading-7 text-[#45586c] sm:text-lg sm:leading-8 lg:mx-0 lg:text-xl lg:leading-9">
 
-              AMFI Registered Mutual Fund Distributor(ARN-351244), helping individuals and families create, grow and preserve wealth through smart financial planning, investment research and personalized wealth management.
+              AMFI Registered Mutual Fund Distributor(ARN-351244). 
+              <br />
+              Helping individuals and families create, grow and preserve wealth through smart financial planning, investment research and personalized wealth management.
 
             </p>
 
