@@ -285,34 +285,31 @@ function Footer() {
 
               {navigationLinks.map((item) => (
 
-                <a
-                  key={item.to}
-                  href={`#${item.to}`}
-                  className="
-                    group
-                    flex
-                    cursor-pointer
-                    items-center
-                    gap-2
-                    sm:gap-3
-                    text-gray-300
-                    text-sm
-                    sm:text-base
-                    transition-all
-                    duration-300
-                    hover:translate-x-2
-                    hover:text-[#D4AF37]
-                  "
-                >
+                <li key={item.to}>
+                  <a
+                    href={`#${item.to}`}
+                    className="
+                      group
+                      flex
+                      items-center
+                      gap-2
+                      sm:gap-3
+                      text-gray-300
+                      text-sm
+                      sm:text-base
+                      transition-all
+                      duration-300
+                      hover:translate-x-2
+                      hover:text-[#D4AF37]
+                    "
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37] opacity-0 transition group-hover:opacity-100"></span>
 
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37] opacity-0 transition group-hover:opacity-100"></span>
-
-                  {item.label}
-
-                </a>
+                    {item.label}
+                  </a>
+                </li>
 
               ))}
-
             </ul>
 
           </motion.div>
@@ -331,30 +328,31 @@ function Footer() {
 
             <ul className="mt-5 space-y-3 sm:mt-7 sm:space-y-4">
               {services.map((service) => (
-                <a
-                  key={service.label}
-                  href={`#${service.to}`}
-                  className="
-                    group
-                    flex
-                    cursor-pointer
-                    items-center
-                    gap-2 sm:gap-3
-                    text-sm
-                    sm:text-base
-                    text-gray-300
-                    transition-all
-                    duration-300
-                    hover:translate-x-2
-                    hover:text-[#D4AF37]
-                  "
-                >
 
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37] opacity-0 transition group-hover:opacity-100"></span>
+                <li key={service.label}>
+                  <a
+                    href={`#${service.to}`}
+                    className="
+                      group
+                      flex
+                      items-center
+                      gap-2
+                      sm:gap-3
+                      text-sm
+                      sm:text-base
+                      text-gray-300
+                      transition-all
+                      duration-300
+                      hover:translate-x-2
+                      hover:text-[#D4AF37]
+                    "
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37] opacity-0 transition group-hover:opacity-100"></span>
 
-                  {service.label}
+                    {service.label}
+                  </a>
+                </li>
 
-                </a>
               ))}
             </ul>
           </motion.div>
@@ -460,6 +458,7 @@ function Footer() {
         <div className="relative border-t border-white/10 py-8">
 
           <button
+            aria-label="Scroll to top"
             onClick={() =>
               window.scrollTo({
                 top: 0,

@@ -132,6 +132,7 @@ function Navbar() {
           </div>
 
           <button
+            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
             onClick={() => setMobileOpen(!mobileOpen)}
             className="
               flex
