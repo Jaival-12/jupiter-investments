@@ -450,7 +450,12 @@ Thank you.`
                   className="w-full rounded-2xl border border-purple-100 bg-white/80 px-4 py-3.5 sm:px-5 sm:py-4 outline-none transition-all duration-300 focus:border-[#6F2DBD] focus:ring-4 focus:ring-[#6F2DBD]/10"
                 />
 
+                <label htmlFor="service" className="sr-only">
+                  Investment Goal
+                </label>
+                
                 <select
+                  id="service"
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
