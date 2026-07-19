@@ -351,12 +351,7 @@ Thank you.`
 
                 {/* Primary Button */}
 
-                <Link
-                  to="contact"
-                  smooth={true}
-                  offset={-100}
-                  duration={700}
-                >
+                <a href="#contact">
                   <button
                     className="
                       group
@@ -380,15 +375,18 @@ Thank you.`
                       hover:text-[#6F2DBD]
                       sm:w-auto
                       sm:px-8
-                      "
+                    "
                   >
                     <CalendarDays size={21} />
 
                     Book Consultation
 
-                    <ArrowRight size={22}  className="transition-transform duration-300 group-hover:translate-x-1"/>
+                    <ArrowRight
+                      size={22}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
                   </button>
-                </Link>
+                </a>
 
                 {/* Secondary Button */}
           

@@ -15,10 +15,8 @@ import {
 
 import logo from "../../assets/images/logo.png";
 
-import { Link } from "react-scroll";
 import { navigationLinks } from "../../data/navigationData";
 
-import { animateScroll as scroll } from "react-scroll";
 
 
 const services = [
@@ -142,12 +140,7 @@ function Footer() {
 
           </p>
 
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-100}
-            duration={700}
-          >
+          <a href="#contact">
             <button
               className="
                 group
@@ -181,7 +174,7 @@ function Footer() {
                 className="transition group-hover:translate-x-1"
               />
             </button>
-          </Link>
+          </a>
 
         </motion.div>
 
@@ -292,13 +285,9 @@ function Footer() {
 
               {navigationLinks.map((item) => (
 
-                <Link
+                <a
                   key={item.to}
-                  to={item.to}
-                  smooth={true}
-                  spy={true}
-                  offset={-100}
-                  duration={700}
+                  href={`#${item.to}`}
                   className="
                     group
                     flex
@@ -320,7 +309,7 @@ function Footer() {
 
                   {item.label}
 
-                </Link>
+                </a>
 
               ))}
 
@@ -342,13 +331,9 @@ function Footer() {
 
             <ul className="mt-5 space-y-3 sm:mt-7 sm:space-y-4">
               {services.map((service) => (
-                <Link
+                <a
                   key={service.label}
-                  to={service.to}
-                  smooth={true}
-                  spy={true}
-                  offset={-100}
-                  duration={700}
+                  href={`#${service.to}`}
                   className="
                     group
                     flex
@@ -369,7 +354,7 @@ function Footer() {
 
                   {service.label}
 
-                </Link>
+                </a>
               ))}
             </ul>
           </motion.div>
@@ -475,9 +460,10 @@ function Footer() {
         <div className="relative border-t border-white/10 py-8">
 
           <button
-            onClick={() => scroll.scrollToTop({
-                duration: 900,
-                smooth: "easeInOutQuart",
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
               })
             }
             className="

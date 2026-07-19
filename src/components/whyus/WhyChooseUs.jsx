@@ -4,7 +4,6 @@ import { whyChooseData } from "../../data/whyChooseData";
 import AnimatedCounter from "../common/AnimatedCounter";
 import { ArrowRight, CalendarDays } from "lucide-react";
 
-import { Link } from "react-scroll";
 
 const stats = [
   {
@@ -223,12 +222,7 @@ function WhyChooseUs() {
 
             <div className="mt-10 flex flex-wrap justify-center gap-5">
 
-            <Link
-              to="contact"
-              smooth={true}
-              offset={-100}
-              duration={700}
-            >
+            <a href="#contact">
               <button
                 className="
                   flex
@@ -253,14 +247,9 @@ function WhyChooseUs() {
 
                 <ArrowRight size={22} />
               </button>
-            </Link>
+            </a>
 
-            <Link
-              to="services"
-              smooth={true}
-              offset={-100}
-              duration={700}
-            >
+            <a href="#services">
               <button
                 className="
                   group
@@ -290,7 +279,7 @@ function WhyChooseUs() {
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
               </button>
-            </Link>
+            </a>
 
             </div>
 

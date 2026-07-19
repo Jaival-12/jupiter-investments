@@ -6,8 +6,6 @@ import {
 
 import founder from "../../assets/hero.webp";
 
-import { Link } from "react-scroll";
-
 import AboutBackground from "./AboutBackground";
 
 function AboutPreview() {
@@ -80,12 +78,7 @@ function AboutPreview() {
               ))}
             </div>
 
-            <Link
-              to="why-us"
-              smooth={true}
-              offset={-100}
-              duration={700}
-            >
+            <a href="#why-us">
               <button
                 className="
                   group
@@ -111,7 +104,7 @@ function AboutPreview() {
 
                 <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
               </button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>

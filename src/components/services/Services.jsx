@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import { services } from "../../data/servicesData";
 import ServiceCard from "./ServiceCard";
-import { Link } from "react-scroll";
 
 function Services() {
   const [expandedCard, setExpandedCard] = useState(null);
@@ -134,13 +133,7 @@ function Services() {
           className="mt-14 text-center sm:mt-16 lg:mt-20"
         >
 
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-100}
-            duration={700}
-          >
-
+          <a href="#contact">
             <button
               className="
                 rounded-xl
@@ -162,14 +155,11 @@ function Services() {
                 sm:text-lg
                 lg:px-10
                 lg:py-5
-                "
+              "
             >
-
               Schedule a Free Consultation
-
             </button>
-
-          </Link>
+          </a>
 
         </motion.div>
 
