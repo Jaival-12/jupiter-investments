@@ -5,7 +5,6 @@ import {
   Star,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-scroll";
 
 import TrustCard from "../hero/TrustCard";
 import { heroTrustData } from "../../data/heroTrustData";
@@ -110,25 +109,19 @@ Thank you.`
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
 
-              <Link
-                to="contact"
-                smooth={true}
-                offset={-100}
-                duration={700}
+              <a
+                  href="#contact"
+                  className="group flex w-full items-center justify-center gap-4 rounded-md bg-[#6424b8] px-6 py-4 font-bold text-white shadow-xl shadow-purple-900/25 transition hover:bg-[#4A148C] sm:w-auto"
               >
-                <button className="group flex w-full items-center justify-center gap-4 rounded-md bg-[#6424b8] px-6 py-4 font-bold text-white shadow-xl shadow-purple-900/25 transition hover:bg-[#4A148C] sm:w-auto">
-
                   <CalendarDays size={20} />
 
                   Book Consultation
 
                   <ArrowRight
-                    size={20}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
+                      size={20}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
                   />
-
-                </button>
-              </Link>
+              </a>
 
               <a
                 href={whatsappURL}
@@ -173,7 +166,7 @@ Thank you.`
 
           </motion.div>
 
-                    {/* ================= RIGHT SIDE ================= */}
+          {/* ================= RIGHT SIDE ================= */}
 
           <motion.div
             initial={{ opacity: 0, x: 80 }}
@@ -222,17 +215,6 @@ Thank you.`
               </div>
 
               <div className="mt-12 lg:mt-6">
-
-                <Link
-                  to="why-us"
-                  smooth={true}
-                  offset={-100}
-                  duration={700}
-                >
-
-                  
-
-                </Link>
 
               </div>
 

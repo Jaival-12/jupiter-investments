@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CalendarDays, Menu, X } from "lucide-react";
-import { Link } from "react-scroll";
 
 import { navigationLinks } from "../../data/navigationData";
 
@@ -42,17 +41,11 @@ function Navbar() {
 
         <div className="flex items-center gap-10">
           {navigationLinks.map((item) => (
-            <Link
+            <a
               key={item.to}
-              to={item.to}
-              spy={true}
-              smooth={true}
-              offset={-120}
-              duration={700}
-              activeClass="nav-active"
+              href={`#${item.to}`}
               className="
                 nav-link
-                cursor-pointer
                 text-[15px]
                 font-medium
                 tracking-wide
@@ -63,18 +56,13 @@ function Navbar() {
               "
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </div>
 
         {/* CTA */}
 
-        <Link
-          to="contact"
-          smooth={true}
-          offset={-100}
-          duration={700}
-        >
+        <a href="#contact">
           <button
             className="
               group
@@ -101,10 +89,9 @@ function Navbar() {
               size={18}
               className="transition group-hover:rotate-12"
             />
-
             Schedule Meeting
           </button>
-        </Link>
+        </a>
       </motion.div>
 
       {/* ================= MOBILE ================= */}
@@ -168,7 +155,7 @@ function Navbar() {
         <AnimatePresence>
 
           {mobileOpen && (
-                      <motion.div
+          <motion.div
             initial={{ opacity: 0, y: -20, scale: 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 0.97 }}
@@ -192,16 +179,11 @@ function Navbar() {
 
                   <div key={item.to}>
 
-                    <Link
-                      to={item.to}
-                      spy={true}
-                      smooth={true}
-                      offset={-100}
-                      duration={700}
+                    <a
+                      href={`#${item.to}`}
                       onClick={() => setMobileOpen(false)}
                       className="
                         block
-                        cursor-pointer
                         rounded-xl
                         px-4
                         py-4
@@ -213,9 +195,9 @@ function Navbar() {
                         hover:bg-[#F7F2FF]
                         hover:text-[#6F2DBD]
                       "
-                    >
-                      {item.label}
-                    </Link>
+                  >
+                    {item.label}
+                  </a>
 
                     {index !== navigationLinks.length - 1 && (
                       <div className="mx-4 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent" />
@@ -229,12 +211,9 @@ function Navbar() {
 
               <div className="mt-8">
 
-                <Link
-                  to="contact"
-                  smooth={true}
-                  offset={-100}
-                  duration={700}
-                  onClick={() => setMobileOpen(false)}
+                <a
+                    href="#contact"
+                    onClick={() => setMobileOpen(false)}
                 >
                   <button
                     className="
@@ -261,7 +240,7 @@ function Navbar() {
 
                     Book Consultation
                   </button>
-                </Link>
+                </a>
 
               </div>
 

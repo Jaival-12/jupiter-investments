@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll";
 import {
   FaArrowRight,
   FaChevronUp,
@@ -240,38 +239,37 @@ function ServiceCard({
                   delay: 0.25,
                 }}
               >
-                <Link
-                to="contact"
-                smooth={true}
-                offset={-100}
-                duration={700}
+              
+
+              <a
+                href="#contact"
                 onClick={(e) => e.stopPropagation()}
                 className="
-                    group
-                    mt-8
-                    inline-flex
-                    cursor-pointer
-                    items-center
-                    gap-3
-                    rounded-xl
-                    bg-gradient-to-r
-                    from-[#6F2DBD]
-                    to-[#8E44EC]
-                    px-6
-                    py-3
-                    font-semibold
-                    text-white
-                    shadow-lg
-                    transition-all
-                    duration-300
-                    hover:-translate-y-1
-                    hover:shadow-xl
+                  group
+                  mt-8
+                  inline-flex
+                  cursor-pointer
+                  items-center
+                  gap-3
+                  rounded-xl
+                  bg-gradient-to-r
+                  from-[#6F2DBD]
+                  to-[#8E44EC]
+                  px-6
+                  py-3
+                  font-semibold
+                  text-white
+                  shadow-lg
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:shadow-xl
                 "
-                >
+              >
                 Schedule Consultation
 
                 <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+              </a>
               </motion.div>
             </div>
           </motion.div>
