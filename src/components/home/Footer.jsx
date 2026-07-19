@@ -239,23 +239,35 @@ function Footer() {
               lg:gap-4
               ">
 
-              <button className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]">
+              <a
+                href="https://facebook.com/yourpage"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
+                className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]"
+              >
+                <FaFacebookF aria-hidden="true" />
+              </a>
 
-                <FaFacebookF />
+              <a
+                href="https://instagram.com/yourpage"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Instagram page"
+                className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]"
+              >
+                <FaInstagram aria-hidden="true" />
+              </a>
 
-              </button>
-
-              <button className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]">
-
-                <FaInstagram />
-
-              </button>
-
-              <button className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]">
-
-                <FaLinkedinIn />
-
-              </button>
+              <a
+                href="https://linkedin.com/yourpage"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our LinkedIn page"
+                className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-[#6F2DBD]"
+              >
+                <FaLinkedinIn aria-hidden="true" />
+              </a>
 
             </div>
 
