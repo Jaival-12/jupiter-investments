@@ -14,6 +14,8 @@ function LogoSection() {
         src={logo}
         alt="Jupiter Investments"
         className="mx-auto h-44 object-contain"
+        fetchPriority="high"
+        decoding="async"
       />
 
       <div className="mt-4 flex justify-center">
