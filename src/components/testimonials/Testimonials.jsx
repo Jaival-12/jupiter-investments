@@ -70,16 +70,20 @@ function Testimonials() {
 
           <button
             onClick={() => scroll("left")}
+            aria-label="Previous testimonials"
+            title="Previous testimonials"
             className="rounded-full border border-purple-100 bg-white p-3 shadow-lg transition hover:bg-[#6F2DBD] hover:text-white"
           >
-            <ChevronLeft size={22} />
+            <ChevronLeft size={22} aria-hidden="true" />
           </button>
 
           <button
             onClick={() => scroll("right")}
+            aria-label="Next testimonials"
+            title="Next testimonials"
             className="rounded-full border border-purple-100 bg-white p-3 shadow-lg transition hover:bg-[#6F2DBD] hover:text-white"
           >
-            <ChevronRight size={22} />
+            <ChevronRight size={22} aria-hidden="true" />
           </button>
 
         </div>
